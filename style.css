@@ -5,15 +5,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto Slab", serif;
-    background-color: #0e0724;
+    /* background-color: #333; */
+    background-image: url("pics/pexels-johnpet-2115257.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
   }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  ul {
-    font-family: "Roboto Slab", serif;
-  }
+  
   .spacer {
     width: 100%;
     height: 8vw;
@@ -23,10 +22,7 @@ body {
       height: 18vw;
     }
   }
-  .middle {
-    margin: 0 auto;
-    width: 60%;
-  }
+ 
   .mylogosmall {
     width: 6vw;
     display: block;
@@ -36,12 +32,13 @@ body {
     Header CSS
     -------- */
   header {
-    background-color: #0e0724;
+    background-color: #b4b2bb;
     width: 100%;
     height: 6vw;
-    box-shadow: 0px 5px rgb(106, 112, 2);
+    box-shadow: 0px 5px rgb(34, 34, 33);
     font-family: "Roboto Slab", serif;
     top: 0;
+    padding-top: 1vw;
     position: fixed;
     z-index: 1;
   }
@@ -81,53 +78,7 @@ body {
     margin-left: 2vw;
     display: none; /* Hide by default */
   }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 1.5vw;
-    border: none;
-    outline: none;
-    color: #d9df31;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: rgb(78, 79, 0);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: #d9df31;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #d9df31;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+ 
   /* Links */
   nav a {
     text-decoration: none;
@@ -180,3 +131,37 @@ body {
   
   }
   /*End of header css*/
+
+
+/* Index css */
+.nytt{
+    margin: 0 auto;
+    color: white;
+    font-size: 2vw;
+}
+.main{
+    margin: 0 auto;
+    padding-top: 4vw;
+    width: 80%;
+    text-align: center;
+    min-height: 40vw;
+    border: #d9df31 solid 4px;
+}
+.ytcontent
+{
+    width: 100%;
+    min-height: 20vw;
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    border: #c55810 solid 4px;
+}
+.video{
+    width: 18vw;
+    min-height: 14vw;
+    max-height: 16vw;
+    margin: 0 auto;
+   background-color: aqua;
+}
