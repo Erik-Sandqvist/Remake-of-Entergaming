@@ -163,6 +163,7 @@ body {
     max-height: 16vw;
     margin: 0 auto;
    background-color: rgba(28, 49, 145, 0.8);
+   box-shadow: 4px 4px;
 }
 .videotxt{
     width: 24vw;
@@ -178,6 +179,7 @@ iframe{
     width: 24vw;
     height: auto;
     min-height: 13vw;
+    box-shadow: 4px 4px;
 }
 .tkanal{
     width: 12vw;
@@ -212,6 +214,7 @@ iframe{
     min-height: 20vw; 
     max-height: 20vw;
     margin: 0 auto;
+    box-shadow: 4px 4px;
 }
 @media (max-width: 900px) {
     .nytt{
