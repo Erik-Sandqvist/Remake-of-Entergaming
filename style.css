@@ -66,7 +66,7 @@ body {
   
   .mobile-menu li {
     text-align: center;
-    padding: 1vw 0;
+    padding: 2vw 0;
     color: #0e0724;
   }
   
@@ -111,7 +111,7 @@ body {
       padding-right: 10vw;
     }
     header {
-      height: 16vw;
+      height: 19vw;
     }
     .hamburger {
       display: block; /* Show the hamburger menu */
@@ -152,6 +152,7 @@ body {
     min-height: 20vw;
     margin-top: 2vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 1vw;
     align-items: center;
@@ -165,18 +166,14 @@ body {
 }
 .videotxt{
     width: 24vw;
-    min-height: 4vw;
+    min-height: 6vw;
     max-height: 6vw;
     margin: 0 auto;
    background-color: transparent;
+   font-size: 1.2vw;
    color: white;
 }
-.videopic{
-    width: 24vw;
-    min-height: 10vw;
-    max-height: 10vw;
-    margin: 0 auto;
-}
+
 iframe{
     width: 24vw;
     height: auto;
@@ -186,7 +183,7 @@ iframe{
     width: 12vw;
     height: 3vw;
     margin: 0 auto;
-    margin-top: 3vw;
+    margin-top: 8vw;
     background-color: #e2a80a;
     border-radius: 10px;
     font-size: 1.1vw;
@@ -195,6 +192,27 @@ iframe{
    align-content: center;
 }
 
+.pc{
+    min-height: 28vw;
+    max-height: 30vw;
+    margin: 0 auto;
+   flex: 0 31%;
+   
+}
+.pctxt{
+    width: 24vw;
+   height: 4vw;
+    margin: 0 auto;
+    padding-bottom: 2vw;
+   background-color: red;
+   color: white;
+}
+.pcpic{
+    width: auto;
+    min-height: 20vw; 
+    max-height: 20vw;
+    margin: 0 auto;
+}
 @media (max-width: 900px) {
     .nytt{
         font-size: 4vw;
@@ -244,8 +262,15 @@ iframe{
         width: 52vw;
         height: 10vw;
         margin: 0 auto;
-        margin-top: 0;
+        margin-top: 3vw;
         background-color: #d3d609;
         border-radius: 6px;
+        font-size: 3vw;
+    }
+    .pcpic{
+        width: auto;
+        min-height: 50vw; 
+        max-height: 50vw;
+        margin: 0 auto;
     }
   }
