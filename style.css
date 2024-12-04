@@ -85,6 +85,22 @@ body {
     padding: 1vw;
     font-size: 1.5vw;
     color: white;
+    position: relative;
+  }
+
+  nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Placera linjen längst ner på länken */
+    left: 0;
+    width: 0;
+    height: 4px; /* Tjockleken på linjen */
+    background-color: yellow;
+    transition: width 0.3s ease; /* Skapar en snygg animation när linjen visas */
+  }
+  
+  nav a:hover::after {
+    width: 100%; /* Expanderar linjen till hela länkens bredd vid hovring */
   }
   
   nav p {
@@ -164,7 +180,13 @@ body {
     margin: 0 auto;
    background-color: rgba(28, 49, 145);
    box-shadow: 4px 4px;
-}
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig övergång för förstoring och skugga */
+  }
+  
+  .video:hover {
+    transform: scale(1.1); /* Förstorar iframe med 10% */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3); /* Förstärker skuggan för en mer markerad effekt */
+  }
 .videotxt{
     width: 24vw;
     min-height: 6vw;
@@ -182,6 +204,7 @@ iframe{
     min-height: 13vw;
     box-shadow: 4px 4px;
 }
+
 .tkanal{
     width: 12vw;
     height: 3vw;
@@ -193,15 +216,27 @@ iframe{
     color: white;
     text-align: center;
    align-content: center;
-}
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig övergång för förstoring och skugga */
+   cursor: pointer;
+  }
+  
+  .tkanal:hover {
+    transform: scale(1.1); /* Förstorar iframe med 10% */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3); /* Förstärker skuggan för en mer markerad effekt */
+  }
 
 .pc{
     min-height: 28vw;
     max-height: 30vw;
     margin: 0 auto;
-   flex: 0 31%;
-   
-}
+   flex: 0 31%; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig övergång för förstoring och skugga */
+  }
+  
+  .pc:hover {
+    transform: scale(1.1); /* Förstorar iframe med 10% */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.3); /* Förstärker skuggan för en mer markerad effekt */
+  }
 .pctxt{
     width: 24vw;
    height: 4vw;
@@ -278,3 +313,69 @@ iframe{
         margin: 0 auto;
     }
   }
+
+
+  /* Footer css */
+  footer {
+    background: linear-gradient(to bottom, #2d4187, #121d42); /* Gradient från blå till mörkblå */
+    color: white;
+    text-align: center;
+    padding: 2vw 0;
+    font-family: Arial, sans-serif;
+    margin-top: 4vw;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2vw; /* Avstånd mellan länkar */
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1vw;
+    position: relative; /* För att kunna använda ::after relativt länken */
+  }
+  
+  .footer-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Placera linjen precis under texten */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease; /* Smidig animation när linjen visas */
+  }
+  
+  .footer-links a:hover::after {
+    width: 100%; /* Expanderar linjen till hela länkens bredd vid hovring */
+  }
+  
+  
+  .footer-icons {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw; /* Avstånd mellan ikoner */
+  }
+  
+  .footer-icons img {
+    width: 2.5vw;
+    height: auto;
+  }
+  
+  .footer-icons a {
+    display: inline-block;
+  }
+  
+  .footer-copyright {
+    margin-top: 2vw;
+    font-size: 0.9vw;
+  }
+  
