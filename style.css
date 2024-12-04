@@ -229,7 +229,7 @@ iframe{
     min-height: 28vw;
     max-height: 30vw;
     margin: 0 auto;
-    padding: 10px;
+    padding: 1px;
    flex: 0 31%; 
    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig övergång för förstoring och skugga */
   }
